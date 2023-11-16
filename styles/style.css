@@ -53,11 +53,12 @@ body {
 /* Cursor */
 
 #cursor {
-  height: 18px;
-  width: 18px;
+  height: 12px;
+  width: 12px;
   background-color: var(--clr-light);
   border-radius: 50%;
   position: absolute;
+  z-index: 9999;
   /* top: 10rem; */
   /* left: 40rem; */
   transition: all 0.3s ease-out;
@@ -90,4 +91,26 @@ a {
 
 strong {
   color: var(--clr-indigo);
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-stone400);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-rose);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-indigo);
 }
